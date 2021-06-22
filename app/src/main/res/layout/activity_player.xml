@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Player"
+        app:layout_constraintTop_toTopOf="@id/imageButtonSetting"
+        app:layout_constraintLeft_toRightOf="@id/imageButtonBack"
+        app:layout_constraintRight_toLeftOf="@id/imageButtonSetting"
+        />
+
+    <TextView
+        android:id="@+id/text_HP"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonSetting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="HP"
+         />
+    <Button
+        android:id="@+id/minus_HP"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="-"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonSetting"
+        app:layout_constraintLeft_toRightOf="@id/text_HP"
+        />
+    <TextView
+        android:id="@+id/textStateHP"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonSetting"
+        app:layout_constraintLeft_toRightOf="@id/minus_HP"
+        />
+
+    <Button
+        android:id="@+id/plus_HP"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="+"
+        app:layout_constraintTop_toTopOf="@id/textStateHP"
+        app:layout_constraintLeft_toRightOf="@id/textStateHP"
+        />
+
+
+    <TextView
+        android:id="@+id/text_Strength"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/textStateHP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Strength"
+        />
+    <Button
+        android:id="@+id/minus_Strength"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="-"
+        app:layout_constraintTop_toBottomOf="@id/textStateHP"
+        app:layout_constraintLeft_toRightOf="@id/text_HP"
+        />
+    <TextView
+        android:id="@+id/textStateStrength"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/textStateHP"
+        app:layout_constraintLeft_toRightOf="@id/minus_HP"
+        />
+
+    <Button
+        android:id="@+id/plus_Strength"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="+"
+        app:layout_constraintTop_toBottomOf="@id/text_HP"
+        app:layout_constraintLeft_toRightOf="@id/textStateHP"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
